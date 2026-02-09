@@ -218,17 +218,36 @@ Elyira shifts automation from rule configuration to behavioural inference.
 
 ```text
 elyira/
-├── README.md
 ├── architecture/
-│   └── elyira-architecture.svg
-├── prompts/
+│   └── elyira-architecture.svg          # Agentic reasoning pipeline diagram
+├── frontend/                            # React + Vite + TypeScript Dashboard
+│   ├── components/                      # Modular UI components
+│   │   ├── AnalysisCard.tsx             # Real-time task abstraction view
+│   │   ├── GlitchHeader.tsx             # System branding and status
+│   │   ├── StatsPanel.tsx               # Confidence and safety metrics
+│   │   └── TerminalWindow.tsx           # Raw telemetry and agent logs
+│   ├── App.tsx                          # Main application logic
+│   ├── constants.ts                     # Configuration and safety thresholds
+│   ├── index.html                       # Entry point
+│   ├── index.tsx                        # React mount point
+│   ├── metadata.json                    # System metadata
+│   ├── package.json                     # Dependency management
+│   ├── tsconfig.json                    # TypeScript configuration
+│   ├── types.ts                         # Type definitions for agents and signals
+│   └── vite.config.ts                   # Build configuration
+├── prompts/                             # Gemini 3 reasoning instructions
 │   ├── 01_latent_task_detection.txt
 │   ├── 02_agent_blueprint_generation.txt
 │   └── 03_execution_simulation.txt
-├── sample-data/
+├── results/                             # Proof-of-concept raw outputs (.txt)
+│   ├── 01_detection_result.txt
+│   ├── 02_blueprint_result.txt
+│   └── 03_simulation_result.txt
+├── sample-data/                         # Synthetic activity logs for validation
 │   └── synthetic_activity_stream.txt
-└── demo/
-    └── demo-link.txt
+├── demo/                                # Submission assets
+│   └── demo-link.txt                    # Final video/live demo URL
+└── README.md                            # Project documentation
 ```
 
 ---
