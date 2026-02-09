@@ -103,6 +103,7 @@ Elyira is built on four core principles:
 5.  Confidence & Safety Gate
 6.  Simulated Autonomous Execution
 7.  Minimal Interface Layer
+<img width="696" height="1060" alt="image" src="https://github.com/user-attachments/assets/9afede60-e674-40ed-944e-1702fe114789" />
 
 ---
 
