@@ -236,18 +236,17 @@ Elyira shifts automation from rule configuration to behavioural inference.
 
 ## Repository Structure
 elyira/
-│
 ├── README.md
 ├── architecture/
-│ └── elyira-architecture.svg
+│   └── elyira-architecture.svg
 ├── prompts/
-│ ├── 01_latent_task_detection.txt
-│ ├── 02_agent_blueprint_generation.txt
-│ └── 03_execution_simulation.txt
+│   ├── 01_latent_task_detection.txt
+│   ├── 02_agent_blueprint_generation.txt
+│   └── 03_execution_simulation.txt
 ├── sample-data/
-│ └── synthetic_activity_stream.txt
+│   └── synthetic_activity_stream.txt
 └── demo/
-└── demo-link.txt
+    └── demo-link.txt
 
 ---
 
