@@ -1,0 +1,48 @@
+You are observing a stream of routine organisational activity over time.
+
+Below is a sequence of short internal messages and updates. They are written by different people, at different times, using different wording.
+
+Your task is not to summarise them.
+
+Instead, reason carefully about whether these messages reveal a recurring underlying activity or responsibility that is being repeated manually.
+
+If you detect repetition:
+1. Describe the latent task in clear, neutral language.
+2. Explain what signals led you to infer that this is the same task being repeated.
+3. Estimate how frequently this task occurs.
+4. State whether this task could plausibly be handled autonomously with high confidence, and explain why.
+
+If you do not detect a recurring task, explain why.
+
+Think step by step and focus on intent rather than phrasing.
+
+Here is the activity stream:
+Week 1
+"Quick update on Project Atlas. We are on track overall. Backend work is mostly done. Frontend has a few pending items. No major blockers at the moment."
+
+Week 1
+"Sharing a brief status for Atlas. Development is progressing as planned. The team is finishing up UI tasks this week. Nothing critical to flag."
+
+Week 2
+"Status update for Project Atlas. Most features are complete. Testing has started. One minor issue in the payment flow but it is being handled."
+
+Week 2
+"Project Atlas update. We are moving into QA. There is a small delay on one integration, but it should not impact the overall timeline."
+
+Week 3
+"Weekly update on Atlas. QA is ongoing. No new risks identified. Team expects to close remaining issues soon."
+
+Week 3
+"Atlas status for this week. Testing is nearly complete. One bug remains under review. Otherwise everything looks good."
+
+Week 4
+"Project Atlas update. QA wrapped up this week. Preparing for release. No outstanding blockers."
+
+Week 4
+"Sharing this week’s Atlas status. Release preparation has started. Final checks are in progress."
+
+Week 5
+"Weekly status for Atlas. Release went out as planned. Monitoring for issues. No incidents so far."
+
+Week 6
+"Atlas update. Post-release monitoring looks stable. No action needed at this time."

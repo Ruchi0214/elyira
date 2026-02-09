@@ -1,0 +1,20 @@
+You have identified a recurring latent task within the activity stream.
+
+Your next task is to express this task as a structured autonomous agent blueprint.
+
+Do not execute the task.
+Do not assume access to external systems.
+
+Instead, define the agent in a clear, structured way by providing:
+
+1. Agent name
+2. Purpose of the agent
+3. Trigger condition that determines when the agent should activate
+4. Inputs the agent would require
+5. Step by step action logic at a high level
+6. Expected output of the agent
+7. A confidence score between 0 and 1 indicating how safely this task could be handled autonomously
+8. Conditions under which the agent should defer to a human instead of acting
+
+Base your reasoning only on the observed activity pattern and inferred intent.
+Explain briefly why this task is suitable or unsuitable for autonomous handling.

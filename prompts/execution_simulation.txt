@@ -1,0 +1,56 @@
+You are simulating the execution of an autonomous agent based on the following agent blueprint.
+
+The agent does not perform real actions.
+It only simulates what it would do and produces a proposed output.
+
+Given the agent definition and a new slice of synthetic project activity:
+
+1. Decide whether the agent should activate.
+2. State the confidence level for this cycle.
+3. If confidence is sufficient, generate the proposed output.
+4. If confidence is insufficient, explain why the agent would defer to a human.
+5. Briefly explain the reasoning behind the decision.
+
+Agent Blueprint:
+
+This blueprint outlines an autonomous agent designed to replace the manual bi-weekly reporting observed in the activity stream.
+1. Agent Name
+Atlas Status Synthesizer
+2. Purpose
+To autonomously monitor project telemetry and technical progress markers to produce concise, high-level status updates, ensuring stakeholders remain informed without requiring manual composition from the development team.
+3. Trigger Condition
+Temporal Trigger: Activates twice per week (e.g., Tuesday and Thursday at 09:00) to match the observed reporting cadence.
+4. Inputs
+Version Control Metadata: Recent commit activity, branch merges, and deployment logs.
+Project Management Data: Status of tickets (In Progress, Done, Blocked), priority levels, and assigned milestones.
+Quality Assurance/Bug Tracker: Current count of open bugs, severity levels, and test execution percentages.
+Previous Update History: The text of the last 2-3 updates to ensure narrative continuity and avoid redundant phrasing.
+5. Step-by-Step Action Logic
+Ingest: Pull data from project management and version control systems for the period since the last trigger.
+Analyze Phase: Determine the current project "mode" (e.g., Development, QA, Release, or Monitoring) based on where the bulk of ticket activity and code changes are occurring.
+Identify Deltas: Isolate what has changed (e.g., "Frontend tasks moved from 50% to 90%" or "QA phase initiated").
+Risk Assessment: Scan for specific flags such as "Blocker" status, high-priority bugs, or failed builds.
+Synthesize Narrative: Generate a 3-4 sentence summary using neutral, professional language that mirrors the observed human style:
+Sentence 1: Overall project health/cadence.
+Sentence 2: Specific progress update (Backend/Frontend/QA).
+Sentence 3: Status of blockers or risks.
+Validate: Cross-reference the draft against the previous update to ensure it does not claim progress that hasn't occurred.
+6. Expected Output
+A short text-based status update.
+Example: "Weekly update on Atlas. Development is concluding with final UI tasks. No major blockers identified. Preparing for transition to QA."
+7. Confidence Score
+0.9 (High)
+8. Deferral Conditions (Human-in-the-loop)
+The agent should pause and request human intervention if:
+It detects "Critical" or "Showstopper" bugs that have not been mentioned in previous cycles.
+There is a significant discrepancy between code activity (high) and ticket progress (none).
+The project deadline is reached, but the automated data shows incomplete milestones.
+Sentiment analysis of internal developer comments indicates high friction or "red" status that isn't reflected in the binary data.
+Suitability Explanation
+This task is highly suitable for autonomous handling because it involves low-variance data synthesis. The manual updates in the stream do not contain complex strategic reasoning; they are "state-of-the-union" reports based on objective progress. Since the underlying data (code merges, ticket movements, bug counts) exists in structured systems, an agent can summarize this more reliably and frequently than a human, while eliminating the redundant effort currently observed where two people provide the same information.
+
+New Activity Slice:
+- Three frontend tickets moved from “In Progress” to “Done”.
+- One medium-severity UI bug opened and assigned.
+- No failed builds reported.
+- No changes to project deadline or scope.
