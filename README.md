@@ -91,8 +91,9 @@ Elyira is built on four core principles:
 ---
 
 ## Architecture
+![architecture 1](https://github.com/user-attachments/assets/ab82b5d2-9ad1-47cb-8d88-783a68b20f6c)
 
-![Elyira Architecture](<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/38e0e6d9-2b40-431c-9ad2-c6fe6a7e6f31" />)
+
 
 ### Flow Overview
 1.  Synthetic Organisational Activity
