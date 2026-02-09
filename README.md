@@ -19,25 +19,45 @@ It explores a fundamental shift in automation: instead of waiting for explicit i
 This repository presents a research-oriented prototype developed for the Gemini 3 Hackathon. All data used in this demonstration is synthetic.
 
 ---
+## Design Principles
+
+Elyira is built on four principles:
+
+- Behaviour over configuration  
+- Measured autonomy over aggressive automation  
+- Reasoning over rules  
+- Transparency over opacity  
+---
+
+---
 
 ## The Core Insight
 
 Organisations lose a significant portion of productive time to invisible operational drag. This is not strategic work or creative thinking, but repetitive, informal, and undocumented tasks such as:
 
-* Manual status reporting
-* Recurring progress summaries
-* Consolidated operational updates
-* Repeated narrative alignment across tools
+- Manual status reporting
+- Recurring progress summaries
+- Consolidated operational updates
+- Repeated narrative alignment across tools
 
-These tasks are rarely configured into automation systems because they are not formally defined. Elyira asks: **Can reasoning models detect repetitive work before humans explicitly describe it?**
+These tasks are rarely configured into automation systems because they are not formally defined. 
+Elyira asks:
+> Can reasoning models detect repetitive work before humans explicitly describe it?**
 
 ---
 
 ## Problem Statement
 
-Modern automation systems depend on manual triggers, predefined workflows, and explicit rule configuration. They assume that humans recognise repetitive tasks early.
+Modern automation systems depend on:
+- Manual triggers
+- Predefined workflows
+- Explicit rule configuration
 
-In practice, most inefficiencies emerge behaviourally over time. There is currently no intelligence layer designed to:
+They assume that humans recognise repetitive tasks early.
+
+In practice, most inefficiencies emerge behaviourally over time. 
+
+There is currently no intelligence layer designed to:
 
 1.  Observe cross-cycle patterns.
 2.  Infer latent tasks.
@@ -63,16 +83,16 @@ The emphasis is on measured autonomy, not aggressive automation.
 
 Elyira is built on four core principles:
 
-* **Behaviour over configuration**
-* **Measured autonomy over unrestricted automation**
-* **Reasoning over rule-based heuristics**
-* **Transparency over opacity**
+- Behaviour over configuration**
+- Measured autonomy over unrestricted automation**
+- Reasoning over rule-based heuristics**
+- Transparency over opacity**
 
 ---
 
 ## Architecture
 
-![Elyira Architecture](architecture/elyira-architecture.svg)
+![Elyira Architecture](<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/38e0e6d9-2b40-431c-9ad2-c6fe6a7e6f31" />)
 
 ### Flow Overview
 1.  Synthetic Organisational Activity
@@ -124,17 +144,32 @@ Without long-horizon reasoning, latent task detection would degrade into surface
 
 ## Technical Feasibility
 
-Elyira demonstrates multi-stage structured prompting, model-native reasoning architecture, controlled confidence thresholds, and safe output boundaries. The prototype runs entirely through the Gemini 3 API via AI Studio. No proprietary enterprise integrations are required for validation.
+Elyira demonstrates:
+
+- Multi-stage structured prompting  
+- Model-native reasoning architecture  
+- Controlled confidence thresholds  
+- Safe output boundaries  
+
+The prototype runs entirely through the Gemini 3 API via AI Studio.
+
+No proprietary enterprise integrations are required for validation.
 
 ---
 
 ## Economic Feasibility
 
-Operational drag represents a measurable cost centre. If 20 per cent of repetitive reporting tasks are reduced:
+Operational drag represents a measurable cost centre.
 
-* 200 hours reclaimed per month in a mid-sized organisation.
-* At £30 per hour average operational cost → £6,000 monthly value.
-* Scaled across 1,000 organisations → £6 million in potential monthly efficiency gain.
+If 20 percent of repetitive reporting tasks are reduced:
+
+- 200 hours reclaimed per month in a mid-sized organisation  
+- At £30 per hour average operational cost  
+  → £6,000 monthly value  
+
+Scaled across 1,000 organisations:
+
+  → £6 million in potential monthly efficiency gain  
 
 The model supports consumption-based or enterprise subscription pricing.
 
@@ -152,17 +187,28 @@ The model supports consumption-based or enterprise subscription pricing.
 
 ## Potential Challenges and Mitigation
 
-> **Model Hallucination**
-> *Mitigation:* Restrict outputs to structured synthesis tasks with defined inputs.
+### Model Hallucination  
+Mitigation: Restrict outputs to structured synthesis tasks with defined inputs.
 
-> **False Positive Task Detection**
-> *Mitigation:* Require multi-cycle behavioural confirmation before activation.
+### False Positive Task Detection  
+Mitigation: Require multi-cycle behavioural confirmation before activation.
 
-> **Over-Automation Risk**
-> *Mitigation:* Strict confidence thresholds and explicit human-in-the-loop triggers.
+### Over-Automation Risk  
+Mitigation: Confidence thresholds and explicit human-in-the-loop triggers.
 
-> **Enterprise Trust Barriers**
-> *Mitigation:* Transparent architecture and explainable reasoning flow.
+### Enterprise Trust Barriers  
+Mitigation: Transparent architecture and explainable reasoning flow.
+---
+---
+
+## Measured Impact Potential
+
+- 30–50 percent reduction in repetitive reporting effort  
+- 20–35 percent operational drag reduction  
+- Reduced cognitive overload  
+- Increased strategic focus time  
+
+Elyira shifts automation from rule configuration to behavioural inference.
 
 ---
 
@@ -181,3 +227,25 @@ elyira/
 │   └── synthetic_activity_stream.txt
 └── demo/
     └── demo-link.txt
+```
+
+---
+
+## Hackathon Compliance
+
+- Built using Gemini 3 API  
+- New project created during contest period  
+- Public demo link provided  
+- Public repository with prompt transparency  
+- Fully synthetic data  
+
+---
+
+## Vision
+
+Elyira demonstrates a shift in how intelligence operates within organisations.
+
+Rather than waiting for instructions, systems can infer structure from behaviour and act within defined safety bounds.
+
+This prototype explores that direction through a model-first architecture powered by Gemini 3.
+
